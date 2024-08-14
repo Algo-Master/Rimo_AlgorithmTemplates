@@ -31,6 +31,7 @@ void bfs(){
     }
 
     queue<ll> q; q.push(0);
+    vis[0] = true;
     dis[0] = 0;
 
     while(!q.empty()) {
