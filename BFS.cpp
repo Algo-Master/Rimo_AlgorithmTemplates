@@ -54,7 +54,7 @@ void bfs()
 
                 q.push(child);
 
-                dis[child] = dis[node]++;
+                dis[child] = dis[node]+1;
                 par[child] = node;
             }
             // This is the optimal way, the approach written below just has been discussed in class
