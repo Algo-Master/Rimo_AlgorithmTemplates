@@ -47,6 +47,9 @@ void dijkstra(){
         (Optimized visiting of nodes) */
         if(vis[node]) continue;
         else vis[node] = true;
+        /* Thing to note we are marking that node is visited here outside the for loop unlike BFS, this is done as
+        "The moment we visit the node we know that we have come to it via the shortest path, which is not true for 
+        when we add the node for the first time" (Very Important Observation) */
 
         for(auto child: adj[node]) {
             // State Handling logic to be handled here
