@@ -6,7 +6,6 @@
 #define bg() begin()
 #define ed() end()
 #define pb push_back
-#define yesno(check) check ? "Yes" : "No";
 #define acc() accumulate()
 #define mp make_pair
 #define rrep(i, n, a) for (int i = n - 1; i >= a; i--)
@@ -18,7 +17,7 @@ const ll N = 2e5;
 vector<ll> adj[N];
 vector<ll> color(N, 0);
 
-vector<int> time_in, time_out;
+vector<int> time_in(N, 0), time_out(N, 0);
 int dfs_timer = 0;
 
 void dfs(int cur)
